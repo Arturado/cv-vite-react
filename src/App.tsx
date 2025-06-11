@@ -1,19 +1,30 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Service from "./components/Service";
+import Skills from "./components/Skills";
+import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
+    <header>
       <Navbar />
+    </header>
+      
+    <main className="pt-20">
       <Hero />
       <About />
+      <Service />
+      <Skills />
+      <Resume />
       <Projects />
       <Contact />
-      </div>
+    </main>
+    </>
   );
 };
 
